@@ -34,7 +34,7 @@ ggplot(data, aes(
                              alpha = 0.25, colour = "white",
                              fontface = "italic") +
   labs(
-    title = "Greenhouse gas emissions, 2018\n",
+    title = "Greenhouse gas emissions, sectoral contributions, 2018\n",
     caption = "\nData: Lamb et al. (2021). Graph: Jolien Noels.",
   ) +
   scale_fill_manual(values=met.brewer("Greek", 6)) +
