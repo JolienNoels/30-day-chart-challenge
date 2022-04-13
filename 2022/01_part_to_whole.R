@@ -29,7 +29,7 @@ ggplot(data, aes(
                     min.size = 12,
                     fontface = "bold",
                     family = 'Noto Sans') +
-  geom_treemap_subgroup_border(colour = "white", size = 5) +
+  geom_treemap_subgroup_border(colour = "#ece3d9", size = 5) +
   geom_treemap_subgroup_text(place = "centre", grow = TRUE,
                              alpha = 0.25, colour = "white",
                              fontface = "italic") +
@@ -41,7 +41,8 @@ ggplot(data, aes(
   theme(
     legend.position = "None",
     plot.title = element_text(size = 30, colour = "#3E0100"),
-    plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm")
+    plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
+    plot.background = element_rect(fill = "#ece3d9")
   ) +
   ggeasy::easy_center_title()
 
