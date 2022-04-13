@@ -22,7 +22,7 @@ ggplot(data, aes(
   area = emissions, label = subsector, 
   fill = sector, subgroup = sector)
   )+
-  geom_treemap(linetype = "solid", color = "white") +
+  geom_treemap(linetype = "solid", color = "white", size = 3) +
   geom_treemap_text(color= "white",
                     place = "centre",
                     size = 12,
